@@ -1,9 +1,15 @@
+a = '1.w.4.5.699'
+index = a.rfind('-')
+print(index)
+print(a[index + 1: len(a)])
 file_name = '/Users/a/Downloads/87346.txt'
 try:
     f = open(file_name, 'r')
     data = f.read()
+    name = f.name
+
     # 读取文件内容
-    print(data)
+    # print(data)
 finally:
     if f:
         f.close()
@@ -15,7 +21,7 @@ print("===========")
 with open(file_name, 'r') as f:
     lines = f.readlines()
     for line in lines:
-        print(line)
+        lines
     # 读取的内容
     # ff = f.read(1024)
     # print(ff)
