@@ -49,3 +49,4 @@ def fn2(x, y):
 print(list(map(str2float, '124.23')))
 result = reduce(fn2, map(str2float, '124.23'))
 
+
